@@ -19,6 +19,6 @@ console.log(age);
 const eleBtn = document.querySelector('#generate');
 
 eleBtn.addEventListener('click', function() {
-
+    console.log()
 })
 
