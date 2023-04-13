@@ -9,11 +9,11 @@ SE età dell' utente < 18  {
 risultato stampato in pagina con solo 2 decimali
 */
 
-const nameSurname = document.getElementById('nameSur');
+const nameSurname = document.getElementById('nameSur').value;
 console.log(nameSurname);
-const kmToTravel = document.getElementById('kilomts');
+const kmToTravel = document.getElementById('kilomts').value;
 console.log(kmToTravel);
-const age = document.getElementById('ageofpax');
+const age = document.getElementById('ageofpax').value;
 console.log(age);
 
 let price = kmToTravel * 0.21;
