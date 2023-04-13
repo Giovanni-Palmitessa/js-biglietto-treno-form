@@ -29,11 +29,21 @@ h1{
 }
 
 .input{
- display: flex;
+    display: flex;
     justify-content: space-around;
 }
 
 h4{
     color: #B91450;
+}
+
+.btns{
+    margin-top: 2rem;
+}
+
+button{
+    color: #B91450;
+    font-weight: 800;
+    padding: 1rem;
 }
 
