@@ -16,3 +16,6 @@ console.log(kmToTravel);
 const age = document.getElementById('ageofpax');
 console.log(age);
 
+let price = kmToTravel * 0.21;
+console.log(`Somma km moltiplicato per 0.21€:` + price)
+
