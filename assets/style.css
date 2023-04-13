@@ -26,11 +26,14 @@ h1{
     background-color: white;
     border-radius: 20px;
     border: 2px solid black;
-    display: flex;
+}
+
+.input{
+ display: flex;
     justify-content: space-around;
 }
 
 h4{
     color: #B91450;
-
 }
+
