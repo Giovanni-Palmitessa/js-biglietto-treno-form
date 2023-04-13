@@ -9,7 +9,7 @@ SE età dell' utente < 18  {
 risultato stampato in pagina con solo 2 decimali
 */
 
-const nameSurname = parseInt(document.getElementById('nameSur').value);
+const nameSurname = document.getElementById('nameSur').value;
 console.log(nameSurname);
 const kmToTravel = parseInt(document.getElementById('kilomts').value);
 console.log(kmToTravel);
@@ -19,6 +19,6 @@ console.log(age);
 const eleBtn = document.querySelector('#generate');
 
 eleBtn.addEventListener('click', function() {
-    
+
 })
 
