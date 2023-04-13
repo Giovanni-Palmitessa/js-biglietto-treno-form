@@ -9,16 +9,37 @@ SE età dell' utente < 18  {
 risultato stampato in pagina con solo 2 decimali
 */
 
-const nameSurname = document.getElementById('nameSur').value;
-console.log(nameSurname);
-const kmToTravel = parseInt(document.getElementById('kilomts').value);
-console.log(kmToTravel);
-const age = parseInt(document.getElementById('ageofpax').value);
-console.log(age);
-
 const eleBtn = document.querySelector('#generate');
 
 eleBtn.addEventListener('click', function() {
-    console.log()
+
+    const nameSurname = document.getElementById('nameSur').value;
+    console.log(nameSurname);
+    const kmToTravel = parseInt(document.getElementById('kilomts').value);
+    console.log(kmToTravel);
+    const age = parseInt(document.getElementById('ageofpax').value);
+    console.log(age);
+    
+    let price = kmToTravel * 0.21;
+    console.log(`Somma km moltiplicato per 0.21€:` + price)
+
+    const discount20 = price * 0.2;
+    const discount40 = price * 0.4;
+
+    if (isNaN(kmToTravel) || isNaN(age)) {
+        document.getElementById (`finalPrice`).innerHTML = `Non hai inserito un valore corretto, ricarica la pagina!`
+    } else {
+    
+    if (age < 18) {
+        price = price - discount20;
+        console.log(`Prezzo con sconto 20%` + price)
+    } else if (age > 65) {
+        price = price - discount40;
+        console.log(`Prezzo con sconto 40%` + price)
+    }
+    document.getElementById (`finalPrice`).innerHTML = `Il costo del biglietto è: ${price.toFixed(2)} €`
+
+    document.getElementById (`finalName`).innerHTML = `Il tuo nome è: ${nameSurname}`
+    }
 })
 
