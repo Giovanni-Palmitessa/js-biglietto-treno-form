@@ -10,5 +10,5 @@ risultato stampato in pagina con solo 2 decimali
 */
 
 const nameSurname = document.getElementById('nameSur');
-const kmToTravel = document.getElementById('kilomts');
-const age = document.getElementById('ageofpax');
+const kmToTravel = document.parseInt(getElementById('kilomts'));
+const age = document.parseInt(getElementById('ageofpax'));
