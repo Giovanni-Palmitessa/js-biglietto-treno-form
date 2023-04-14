@@ -9,16 +9,28 @@ SE età dell' utente < 18  {
 risultato stampato in pagina con solo 2 decimali
 */
 
+let nameSurname = document.getElementById('nameSur');
+
+let kmToTravel = parseInt(document.getElementById('kilomts'));
+
+let age = parseInt(document.getElementById('ageofpax'));
+
+
 const eleBtn = document.querySelector('#generate');
+
+const btnReset = document.querySelector('.btn-reset');
 
 eleBtn.addEventListener('click', function() {
 
-    const nameSurname = document.getElementById('nameSur').value;
+    nameSurname = document.getElementById('nameSur').value;
     console.log(nameSurname);
-    const kmToTravel = parseInt(document.getElementById('kilomts').value);
+
+    kmToTravel = parseInt(document.getElementById('kilomts').value);
     console.log(kmToTravel);
-    const age = parseInt(document.getElementById('ageofpax').value);
+
+    age = parseInt(document.getElementById('ageofpax').value);
     console.log(age);
+
     
     let price = kmToTravel * 0.21;
     console.log(`Somma km moltiplicato per 0.21€:` + price)
@@ -41,5 +53,11 @@ eleBtn.addEventListener('click', function() {
 
     document.getElementById (`finalName`).innerHTML = `Il tuo nome è: ${nameSurname}`
     }
+})
+
+btnReset.addEventListener('click', function() {
+    nameSurname.value = '';
+    kmToTravel.value = '';
+    age.value = '';
 })
 
