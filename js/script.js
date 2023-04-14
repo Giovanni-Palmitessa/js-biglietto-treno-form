@@ -56,8 +56,10 @@ eleBtn.addEventListener('click', function() {
 })
 
 btnReset.addEventListener('click', function() {
-    nameSurname.value = '';
-    kmToTravel.value = '';
-    age.value = '';
+    document.getElementById('nameSur').value = '';
+    document.getElementById('kilomts').value = '';
+    document.getElementById('ageofpax').value = '';
+    document.getElementById('finalPrice') = '';
+    document.getElementById('finalName') = '';
 })
 
