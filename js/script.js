@@ -59,7 +59,7 @@ btnReset.addEventListener('click', function() {
     document.getElementById('nameSur').value = '';
     document.getElementById('kilomts').value = '';
     document.getElementById('ageofpax').value = '';
-    document.getElementById('finalPrice').value = '';
-    document.getElementById('finalName').value = '';
+    document.getElementById('finalPrice').innerHTML = '';
+    document.getElementById('finalName').innerHTML = '';
 })
 
